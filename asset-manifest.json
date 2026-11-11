@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/roommanagment/static/css/main.3890aad6.css",
+    "main.js": "/roommanagment/static/js/main.559f3eba.js",
+    "index.html": "/roommanagment/index.html",
+    "main.3890aad6.css.map": "/roommanagment/static/css/main.3890aad6.css.map",
+    "main.559f3eba.js.map": "/roommanagment/static/js/main.559f3eba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3890aad6.css",
+    "static/js/main.559f3eba.js"
+  ]
+}
