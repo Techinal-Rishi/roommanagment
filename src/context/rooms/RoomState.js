@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoomContext from "./RoomContext";
 
 const RoomState = (props) => {
- const host = process.env.REACT_APP_BACKEND_URL || "https://roommanagment.onrender.com"; // Update with your backend URL/port if different
+ const host = process.env.REACT_APP_HOST || "https://roommanagment.onrender.com"; // Update with your backend URL/port if different
     const [rooms, setRooms] = useState([]);
 
     // 1. Get all Rooms
