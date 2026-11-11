@@ -4,7 +4,7 @@ const router = express.Router();
 const User = require("../models/User");
 const { body, validationResult } = require("express-validator"); // checking for the validation of user
 var jwt = require("jsonwebtoken");
-const JWT_SECRET = "Rishiisagoodb$boy";
+const JWT_SECRET = process.env.JWT_SECRET;
 const fetchuser = require("../middleware/fetchuser");
 
 // ROUTE 1: Create a user using: POST "api/auth/createUser". Doesn't require auth

@@ -1,3 +1,7 @@
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
+require('dotenv').config({ path: path.resolve(__dirname, 'pass.env') });
+
 const connectToMongo = require('./db');
 const express = require('express');
 var cors = require('cors');
@@ -5,7 +9,8 @@ var cors = require('cors');
 connectToMongo(); 
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
+
 
 // Adds headers: Access-Control-Allow-Origin: *
 app.use(cors());

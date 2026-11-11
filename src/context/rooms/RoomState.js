@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import RoomContext from "./RoomContext";
 
 const RoomState = (props) => {
-    const host = "http://localhost:5000"; // Update with your backend URL/port if different
+ const host = process.env.REACT_APP_HOST || "http://localhost:5000"; // Update with your backend URL/port if different
     const [rooms, setRooms] = useState([]);
 
     // 1. Get all Rooms
@@ -77,6 +77,7 @@ const RoomState = (props) => {
                 },
                 body: JSON.stringify({ title, description, contact, place })
             });
+            // eslint-disable-next-line no-unused-vars
             const json = await response.json();
 
             if (response.ok) {
