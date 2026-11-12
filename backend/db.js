@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/roommanagment";
+const mongoURI = process.env.MONGO_URI || "mongodb+srv://rishijogani046_db_user:FpelBtdXAfyNoRiA@cluster0.iu6brir.mongodb.net/";
 
 const connectToMongo = async () => {
 
