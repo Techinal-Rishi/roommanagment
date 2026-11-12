@@ -10,7 +10,7 @@ const Login = (props) => {
     event.preventDefault();
 
     try {
-      const response = await fetch("https://roommanagment.onrender.com", {
+      const response = await fetch("https://roommanagment.onrender.com/api/auth/login", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

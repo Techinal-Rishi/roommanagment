@@ -17,7 +17,7 @@ const Signup = (props) => {
     }
 
     try {
-      const response = await fetch("https://roommanagment.onrender.com", {
+      const response = await fetch("https://roommanagment.onrender.com/api/auth/createuser", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
